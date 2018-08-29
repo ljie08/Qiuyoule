@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="XWShouYeSecondCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="177.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-Sf-VJl" customClass="JhtVerticalMarquee">
+                        <rect key="frame" x="90" y="143.5" width="256" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="NYV-sc-gJi"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oca-ky-qwV">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="143.5"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="hCa-Tv-gSM">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="143.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Hbx-ta-bqA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="1" maxX="1" maxY="1"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="4xm-TF-emh"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="wDS-ry-ued"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hCa-Tv-gSM" firstAttribute="top" secondItem="oca-ky-qwV" secondAttribute="top" id="5i8-K1-pdH"/>
+                            <constraint firstItem="hCa-Tv-gSM" firstAttribute="leading" secondItem="oca-ky-qwV" secondAttribute="leading" id="BpX-vH-3PZ"/>
+                            <constraint firstAttribute="trailing" secondItem="hCa-Tv-gSM" secondAttribute="trailing" id="O5q-Bl-knr"/>
+                            <constraint firstAttribute="bottom" secondItem="hCa-Tv-gSM" secondAttribute="bottom" id="rqm-nl-Cbl"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容介绍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HS-co-AJl">
+                        <rect key="frame" x="0.0" y="143.5" width="90" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xgd-Sf-VJl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="0tW-2B-Bys"/>
+                    <constraint firstAttribute="trailing" secondItem="xgd-Sf-VJl" secondAttribute="trailing" id="2ra-Rk-0F6"/>
+                    <constraint firstAttribute="bottom" secondItem="8HS-co-AJl" secondAttribute="bottom" id="5Mb-7f-Fdg"/>
+                    <constraint firstItem="oca-ky-qwV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9D9-OM-u0i"/>
+                    <constraint firstItem="xgd-Sf-VJl" firstAttribute="leading" secondItem="8HS-co-AJl" secondAttribute="trailing" id="SlN-Kx-oM0"/>
+                    <constraint firstAttribute="trailing" secondItem="oca-ky-qwV" secondAttribute="trailing" id="aUk-hb-m17"/>
+                    <constraint firstItem="xgd-Sf-VJl" firstAttribute="top" secondItem="oca-ky-qwV" secondAttribute="bottom" id="djy-BP-4Ep"/>
+                    <constraint firstItem="8HS-co-AJl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lcY-E7-bAu"/>
+                    <constraint firstAttribute="bottom" secondItem="xgd-Sf-VJl" secondAttribute="bottom" id="naJ-z8-mQd"/>
+                    <constraint firstItem="8HS-co-AJl" firstAttribute="top" secondItem="oca-ky-qwV" secondAttribute="bottom" id="wXf-1y-VhP"/>
+                    <constraint firstItem="oca-ky-qwV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zKP-qY-1bl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="collectionView" destination="hCa-Tv-gSM" id="JTd-5r-cos"/>
+                <outlet property="verticalMarquee" destination="xgd-Sf-VJl" id="EGX-rU-ZaS"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-10"/>
+        </tableViewCell>
+    </objects>
+</document>

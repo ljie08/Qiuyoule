@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MXHomeBtnCollectionCell" id="gTV-IL-0wX" customClass="MXHomeBtnCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="84" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="84" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资讯精选" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Tt-7uO">
+                        <rect key="frame" x="19.5" y="61.5" width="45" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-zixunjingxuan" translatesAutoresizingMaskIntoConstraints="NO" id="vQP-H0-vah">
+                        <rect key="frame" x="14.5" y="0.0" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="Clk-pe-HTv"/>
+                            <constraint firstAttribute="width" secondItem="vQP-H0-vah" secondAttribute="height" multiplier="1:1" id="lLe-Zf-nJo"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WEm-Tt-7uO" secondAttribute="bottom" id="5uR-sW-fZ2"/>
+                <constraint firstItem="vQP-H0-vah" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="CjX-2E-KZ1"/>
+                <constraint firstItem="WEm-Tt-7uO" firstAttribute="top" secondItem="vQP-H0-vah" secondAttribute="bottom" constant="6" id="GUg-4Q-SZy"/>
+                <constraint firstItem="vQP-H0-vah" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Px4-X3-sq8"/>
+                <constraint firstItem="WEm-Tt-7uO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="raj-aV-e40"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="84" height="75"/>
+            <connections>
+                <outlet property="picView" destination="vQP-H0-vah" id="V97-Vp-6lg"/>
+                <outlet property="titleLab" destination="WEm-Tt-7uO" id="vJ7-Ib-Nvx"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="62.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home-zixunjingxuan" width="55" height="55"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - BarrageRenderer (2.1.0)
+  - IQKeyboardManager (5.0.7)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.15.3)
+  - SDAutoLayout (2.2.0)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SocketRocket (0.5.1)
+  - SVProgressHUD (2.2.5)
+  - TZImagePickerController (2.0.0.6)
+  - UITableView+FDTemplateLayoutCell (1.6)
+  - WechatOpenSDK (1.8.1)
+  - WMPageController (2.5.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BarrageRenderer (~> 2.1.0)
+  - IQKeyboardManager
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - SDAutoLayout
+  - SDCycleScrollView
+  - SDWebImage (~> 3.8.1)
+  - SocketRocket
+  - SVProgressHUD (~> 2.0-beta8)
+  - TZImagePickerController
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+  - WechatOpenSDK
+  - WMPageController
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  BarrageRenderer: 00e5f8081d81f29c1fc12712ddf2f875bd9c6f77
+  IQKeyboardManager: 0bfa4607d39924116b5c0c8b55b5d789288b5cba
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TZImagePickerController: '028d1670cd46b2d35769503dd36a6b2d21eee563'
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: 491d965d79335070328571d3e79f714549e79a5e
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+
+PODFILE CHECKSUM: 84b18eceb5da4ca0db722af7f7ef7fd1e4728e42
+
+<<<<<<< HEAD
+COCOAPODS: 1.2.1
+=======
+COCOAPODS: 1.4.0
+>>>>>>> 9bc05c27a08294ddbb03f67b31bcd4ca24c095d6

@@ -1,0 +1,59 @@
+//
+//  MXPrefixHeader.pch
+//  MXFootBall
+//
+//  Created by zt on 2018/3/5.
+//  Copyright © 2018年 zt. All rights reserved.
+//
+
+#ifndef MXPrefixHeader_pch
+#define MXPrefixHeader_pch
+#import "ToolHelper.h"
+#import "Config.h"
+#import <SVProgressHUD.h>
+#import <SDWebImage/SDWebImageManager.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <SDAutoLayout.h>
+#import <MJRefresh.h>
+#import "JJRefreshTabView.h"
+#import "MXLJModel.h"//登录model
+#import "MXLJHomeModel.h"//首页model
+#import "MXLJThirdData.h"//第三方登录获取到的用户信息
+#import "MXSocketManager.h"
+#import "MXNetWorkRequest.h"
+#import "MXNetWorkConfig.h"
+#import "UIImage+Category.h"
+#import "NSString+MXMD5.h"
+#import "MXLJUtil.h"
+#import "MJExtension.h"
+#import <UITableView+FDTemplateLayoutCell.h>
+#import "UIImageView+WebCache.h"
+#import "WebManager.h"//请求类
+#import "UBT.h"
+#import "NSString+base64.h"
+#import "NSDictionary+Log.h"
+#import "WXApi.h"//微信
+
+#import "UITapGestureRecognizer+Category.h"
+#import "MXAlertView.h"
+#import "UITableView+PlaceHolder.h"
+#import "UIView+CornerRadius.h"
+#import "UIImageView+CornerRadius.h"
+#import "MXLoginViewController.h"
+#import "MXNavigationController.h"
+#import "MXOpinionDetailViewController.h"
+#import "MXwodeUnitObject.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Masonry.h>
+#import "UIView+Frame.h"
+#import "UIImageView+WebCache.h"
+#import "NSObject+YYModel.h"
+#import "MXSSToolConfig.h"
+#import "MXssWodeUtils.h"//缓存
+#import "UIViewController+matchID.h"
+#import "MXSituationViewController.h"
+#import "UIButton+ImagePosition.h"
+#import "MXNotDataAlertView.h"//暂无数据的提示view
+#import "NSString+Category.h"
+#endif /* MXPrefixHeader_pch */
